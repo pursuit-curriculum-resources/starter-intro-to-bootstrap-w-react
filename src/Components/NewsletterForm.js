@@ -4,7 +4,7 @@
 // <!-- ************************** -->
 export default function NewsletterForm() {
   return (
-    <div className="">
+    <div className="container">
       <h4>Sign up for our newsletter</h4>
       <form>
         {/* <!-- ************************** -->
@@ -13,29 +13,29 @@ export default function NewsletterForm() {
             <!-- Set class mb-3 on inner div div -->
             <!-- ************************** --> */}
 
-        <div className="">
-          <div className="">
+        <div className="mb-3">
+          <div className="mb3">
             {/* <!-- ************************** -->
                 <!-- Labels & for Text inputs -->
                 <!-- Set class form-label on label -->
                 <!-- Set class form-control on input -->
                 <!-- ************************** --> */}
-            <label htmlFor="name" className="">
+            <label htmlFor="name" className="form-lable">
               Name
             </label>
-            <input type="text" className="" id="name" />
+            <input type="text" className="form-control" id="name" />
           </div>
           {/* <!-- ************************** -->
               <!-- Labels & for Text inputs -->
               <!-- Set class form-label on label -->
               <!-- Set class form-control on div -->
               <!-- ************************** --> */}
-          <label htmlFor="exampleInputEmail1" className="">
+          <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
             type="email"
-            className=""
+            className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
@@ -51,9 +51,9 @@ export default function NewsletterForm() {
             <!-- Set class form-check-label on label -->
             <!-- ************************** --> */}
 
-        <div className="">
-          <input type="checkbox" className="" id="exampleCheck1" />
-          <label className="" htmlFor="exampleCheck1">
+        <div className="mb-3 form-check">
+          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+          <label className="form-label" htmlFor="exampleCheck1">
             Send me promo codes daily!
           </label>
         </div>
@@ -64,7 +64,7 @@ export default function NewsletterForm() {
             <!-- ************************** --> */}
 
         <p>Select frequency of newsletters</p>
-        <select className="" aria-label="Default weekly">
+        <select className="form-select" aria-label="Default weekly">
           <option defaultValue>Weekly</option>
           <option value="1">Daily</option>
           <option value="2">Hourly</option>
@@ -78,9 +78,9 @@ export default function NewsletterForm() {
             <!-- Set class form-check-label on label -->
             <!-- ************************** --> */}
 
-        <div className="">
+        <div className="form-check form-switch">
           <input
-            className=""
+            className="form-check-input"
             type="checkbox"
             id="flexSwitchCheckDefault"
             readOnly
@@ -91,7 +91,7 @@ export default function NewsletterForm() {
           </label>
         </div>
         {/* <!-- Set classes btn btn-primary --> */}
-        <button type="submit" className="">
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>
