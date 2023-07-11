@@ -5,11 +5,13 @@
 
 export default function Nav() {
   return (
-    <nav className="">
-      <div className="">
-        <a className="">Rosier</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          Rosier
+        </a>
         <button
-          className=""
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -17,21 +19,24 @@ export default function Nav() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className=""></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="" id="navbarSupportedContent">
-          <ul className="">
-            <li className="">
-              <a className="" aria-current="page">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
                 Home
               </a>
             </li>
-            <li className="">
-              <a className="">Featured</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Featured
+              </a>
             </li>
-            <li className="">
+            <li class="nav-item dropdown">
               <a
-                className=""
+                class="nav-link dropdown-toggle"
+                href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -39,30 +44,36 @@ export default function Nav() {
               >
                 Learn More
               </a>
-              <ul className="" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="">About</a>
+                  <a class="dropdown-item" href="#">
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a className="">Contact</a>
+                  <a class="dropdown-item" href="#">
+                    Contact
+                  </a>
                 </li>
                 <li>
-                  <hr className="" />
+                  <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="">Surprise me!</a>
+                  <a class="dropdown-item" href="#">
+                    Surprise me!
+                  </a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form className="">
+          <form class="d-flex">
             <input
-              className=""
+              class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="" type="submit">
+            <button class="btn btn-outline-success" type="submit">
               Search
             </button>
           </form>

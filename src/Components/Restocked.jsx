@@ -14,9 +14,9 @@ export default function Restocked() {
     */
 
   return (
-    <div className="">
-      <h3 className="">Just Restocked</h3>
-      <div className="">
+    <div class="container">
+      <h3 class="display-4">Just Restocked</h3>
+      <div class="row align-items-stretch">
         <Card details={detailsCard1} image={yellowRose} />
         <Card details={detailsCard2} image={lavenderRose} />
         <Card details={detailsCard3} image={apricotRose} />

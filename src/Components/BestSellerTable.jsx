@@ -6,8 +6,9 @@ export default function Table() {
   // <!-- ************************** -->
   return (
     <>
-      <h3 className="">Best Sellers</h3>
-      <table className="">
+      <h3 class="display-5">Best Sellers</h3>
+
+      <table class="table table-striped table-hover text-center">
         <thead>
           <tr>
             <th scope="col">#</th>
